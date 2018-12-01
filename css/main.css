@@ -1,0 +1,540 @@
+/*
+Theme Name: Colette Snow Media
+Theme URI: https://colettesnow.com
+Author: Colette Snow
+*/
+
+/* Fonts */
+
+body {
+	font-family: Ubuntu, 'Open Sans', sans-serif;
+}
+
+.menu-main-container, h1, h2, h3, h4, h5, h6, .wp-block-subhead, input[type=submit], input[type=button], input[type=reset] {
+	font-family: 'Zilla Slab', Georgia, serif;
+}
+
+/* Colours */
+
+body {
+	background: #e8e1e7;
+}
+
+.main_area {
+	background: #f9f9f9;
+}
+
+#menu-main a, #social a, input[type=submit], input[type=button], input[type=reset] {
+	color: #f9f9f9;
+}
+
+#menu-main li:hover ul, .menu-main-container, input[type=submit], input[type=button], input[type=reset] {
+	background: #420b2a;
+}
+
+.wp-block-subhead, h1, h2, h3, a {
+	color: #420b2a;
+}
+
+a {
+	text-decoration-color: #815b71;
+}
+
+#menu-main a:hover, .current_page_item a, .current_page_parent a {
+	border-color: #815b71;
+}
+
+input[type=text], input[type=email], input[type=url], input[type=number], input[type=password], input[type=tel], select, textarea {
+	border-color: #e8dee2;
+}
+
+/* Font Sizes */
+
+body, input[type=text], input[type=email], input[type=url], input[type=number], input[type=password], input[type=tel], select, textarea {
+	font-size: 11pt;
+}
+
+.site-heading {
+	font-size: 16pt;
+}
+
+h1 {
+	font-size: 22pt;
+}
+
+h2 {
+	font-size: 18pt;
+}
+
+h3 {
+	font-size: 16pt;
+}
+
+h4 {
+	font-size: 14pt;
+}
+
+h5, h6, .wp-block-subhead, input[type=submit], input[type=button], input[type=reset], .sidebar h2 {
+	font-size: 12pt;
+}
+
+.plugin-intro {
+    font-size: 18pt;
+    line-height: 30pt !important;
+    color: #420b2a;
+}
+
+/* Font Styles */
+
+/* Main Styles */
+
+body {
+	margin: 0;
+	min-width: 900px;
+}
+
+header .inner {
+	height: 100px;
+	margin-top: 20px;
+}
+
+.site-heading {
+	display: inline-block;
+	width: 550px;
+	vertical-align: top;
+	margin-top: 15px;
+	background-image: url(/assets/images/logo.png);
+	background-size: auto 80px;
+	background-repeat: no-repeat;
+	background-position: 0;
+	padding-bottom: 15px;
+}
+
+.site-heading a {
+	height: 60px;
+    width: 520px;
+    display: inline-block;
+}
+
+.site-heading a span {
+	visibility: hidden;
+}
+
+.site-heading a, #menu-main a {
+	text-decoration: none;
+}
+
+#menu-main a:hover {
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+#menu-main ul {
+	display: none;
+}
+
+#menu-main li:hover ul {
+	display: block;
+	position: absolute;
+	list-style: none;
+	padding: 5px 6px;
+	margin: 5px -10px 0 -10px;
+	border-radius: 0 0 6px 6px;
+	box-shadow: 2px 2px #403e3e36;
+}
+
+#menu-main ul li {
+	display: block;
+	padding: 2px 4px;
+}
+
+.site-heading-widgets {
+	display: inline-block;
+	margin: auto 0;
+	width: 300px;
+	padding-top: 15px;
+	vertical-align: top;
+}
+
+.site-heading-widgets ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.site-heading-widgets li {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.site-heading-widgets li:after {
+	content: ' | ';
+	padding-left: 10px;
+}
+
+.site-heading-widgets li:last-child:after {
+	content: none;
+}
+
+h1, h2, h3 {
+	font-weight: 500;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+h5, h6 {
+	font-style: italic;
+}
+
+h1 a, h2 a, h3 a {
+	text-decoration: none;
+}
+
+.wp-block-subhead {
+	font-style: normal !important;
+	font-weight: 650;
+}
+
+.wp-block-subhead a {
+	text-decoration: none;
+}
+
+.wp-block-subhead a:hover {
+	text-decoration: underline;
+}
+
+#menu-main {
+	display: block;
+	width: 900px;
+	min-width: 900px;
+	list-style: none;
+	margin: 10px auto 0 auto;
+	padding: 10px 0 7px 0;
+	height: 30px;
+}
+
+#menu-main li {
+	display: inline-block;
+	padding: 0 20px 0 0;
+	margin: 0;
+	font-size: 15pt;
+}
+
+.current_page_item a, .current_page_parent a {
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+.main_area {
+	padding: 10px 0;
+}
+
+.inner, footer {
+	width: 900px;
+	margin: 0 auto;
+	min-width: 900px;
+}
+
+footer p:first-child {
+	float: left;
+}
+
+footer .abn {
+	float: right;
+}
+
+input[type=text], input[type=email], input[type=url], input[type=number], input[type=password], input[type=tel], select, textarea {
+	padding: 8px 4px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+input[type=submit], input[type=button], input[type=reset] {
+	border: 0;
+	padding: 10px 20px;
+	font-weight: 500;
+}
+
+.product-title {
+	margin-bottom: 0;
+}
+
+.csm_price {
+	margin: 0;
+}
+
+.call-to-action {
+	margin-top: 0;
+}
+
+.main_area p, .main_area li, .main_area blockquote {
+	line-height: 18pt;
+}
+
+#post_101 .wp-block-columns {
+	grid-auto-columns: unset !important;
+}
+
+#post_101 .layout-column-1 {
+	width: 650px;
+}
+
+#post_101 .layout-column-2 {
+	width: 200px;
+}
+
+.wpcf7 p label:first-child {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 4px;
+}
+
+.wpcf7 p input[type=text], .wpcf7 textarea, .wpcf7 p input[type=tel], .wpcf7 p input[type=email], .wpcf7 p input[type=url], .wpcf7 p input[type=password], .wpcf7 select {
+	width: 66%;
+	vertical-align: middle;
+	height: inherit !important;
+}
+
+.wpcf7 p label:not(:first-child) {
+	display: inline-block;
+	width: inherit !important;
+	padding-left: 30%;
+}
+
+.wpcf7 p label:nth-child(2) {
+	padding-left: 0;
+	margin-left: -4px;
+}
+
+.posts {
+	display: inline-block;
+	width: 620px;
+	vertical-align: top;
+	padding-right: 30px;
+}
+
+.sidebar {
+	display: inline-block;
+	width: 240px;
+	vertical-align: top;
+}
+
+.sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+}
+
+.sidebar ul ul {
+	margin-left: 5px;
+}
+
+#social {
+	margin: -38px auto 0 auto;
+	width: 900px;
+	max-width: 900px;
+	min-width: 900px;
+	height: 38px;
+	list-style: none;
+	padding: 0;
+	text-align: right;
+}
+
+#social li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+#social a {
+	font-size: 20pt;
+	text-decoration: none;
+	border: 0;
+}
+
+/* Cleanup after Gutenberg */
+
+.wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+	padding: 5px 10px 5px !important;
+	color: #000 !important;
+	text-align: center !important;
+	font-size: 13px !important;
+	background: #fff !important;
+	position: absolute !important;
+	width: 100% !important;
+	max-height: 100% !important;
+	overflow: auto !important;
+	opacity: 0.8;
+}
+
+figure {
+	margin-left: 0;
+}
+
+/*
+@media (min-width: 900px) { 
+
+	body {
+		margin: 0;
+		min-width: 900px;
+	}
+
+ }
+
+ @media (max-width: 899px) {
+
+	body {
+		max-width: 899px;
+		min-width: unset;
+	}
+
+ }
+ */
+
+.skip-links {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	/* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.layout-column-1, .layout-column-2 {
+	padding-right: 20px !important;
+}
+
+.has-3-columns .wp-block-column {
+	margin-right: 30px;
+}
+
+.has-3-columns .wp-block-column:last-child {
+	margin-right: 0 !important;
+}
+
+.wp-block-column p:last-child {
+	margin-bottom: 25px;
+}
+
+.call-action-btn {
+	background: #420b2a;
+	color: #FFF;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 2px 2px #403e3e36;
+}
+
+.call-action-btn a {
+	color: #FFF;
+	text-decoration: none;
+	padding: 10px 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+.inner article ul {
+	padding-left: 25px;
+}
+
+img.alignright {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+img.alignleft {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Comments */
+
+.commentlist {
+	list-style: none;
+	padding: 0;
+}
+
+.commentlist li {
+	margin-bottom: 10px;
+}
+
+.commentlist cite {
+	font-style: normal;
+}
+
+.commentlist .avatar {
+	vertical-align: bottom;
+	margin-bottom: -15px;
+	margin-right: 10px;
+}
+
+.commentmetadata {
+	margin-left: 45px;
+	font-size: 9pt;
+}
+
+.commentmetadata a {
+	text-decoration: none;
+}
+
+.commentmetadata .comment-edit-link {
+	text-decoration: underline;
+}
+
+#respond label {
+	vertical-align: top;
+}
+
+.inner .posts footer {
+	width: unset;
+	min-width: unset;
+}
+
+.copyright { float: left; }
+
+.foot_links { 
+	list-style: none;
+}
+
+.foot_links ul { 
+	padding: 0;
+}
+
+.foot_links li { 
+	display: inline-block;
+	padding-right: 15px;
+}
+
+#breadcrumbs { width: 900px; margin: 0 auto; font-size: 10pt; }
+
+.inner h1:first-child { margin-top: 5px; }
+

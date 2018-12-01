@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    <div class="inner">
+      <article class="page page-{{ page.name | remove: ".md" | remove: ".html" }} type-page hentry">
+        {{ content }}
+      </article>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
