@@ -1,0 +1,22 @@
+---
+title: Blog
+permalink: /blog/
+layout: default
+---
+
+<h1>Colette Snow Media - Blog</h1>
+
+{% for post in paginator.posts %}
+  {% assign authors = site.authors | where:'slug',post.author | first %}
+
+  <article class="post">
+    <div class="post_details">
+        <h2 class="entry-title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        {{ post.content | replace: "h5", "h6" | replace: "h4", "h5" | replace: "h3", "h4" | replace: "h2", "h3" | replace: "h1", "h2" }}
+        <div class="post_meta">By <a href="{{ authors.url }}">{{ authors.title  }}</a> - {{ post.date | date: "%b %-d, %Y" }} - <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Comments</a></div>
+    </div>
+
+  </article> 
+{% endfor %}
