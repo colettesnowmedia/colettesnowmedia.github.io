@@ -22,9 +22,6 @@
           {% assign authors = site.authors | where:'slug',post.author | first %}
 
         <article class="post">
-              <div class="thumbnail">
-                <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"><img width="150" height="150" src="/images/thumbnails/{{ post.slug }}.jpg" class="attachment-thumbnail size-thumbnail wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt=""></a>
-              </div>
               <div class="post_details">
                   <h2 class="entry-title">
                       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -43,6 +40,7 @@
 
       {% include footer.html %}
 
+      <script id="dsq-count-scr" src="//colettesnowmedia.disqus.com/count.js" async></script>
     </body>
   
   </html>
