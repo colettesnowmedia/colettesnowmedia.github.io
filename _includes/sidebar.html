@@ -1,0 +1,26 @@
+<div class="sidebar" role="complementary">
+        <div>
+                <h2 class="rounded">Categories</h2>
+                <ul>
+                {% for cat in site.cats %}
+                        <li><a href="{{ cat.url }}">{{ cat.title }}</a></li>
+                {% endfor %}
+                </ul>
+        </div>
+        <div>
+                <h2 class="rounded">Archives</h2>
+                <ul>
+                        <li><a href="/blog/archive-by-date/">By Date</a></li>
+                        <li><a href="/blog/archive-by-category/">By Category</a></li>
+                </ul>
+        </div>
+        <div>
+                        <h2 class="rounded">Social Media</h2>
+                        <ul>
+                                <li><a href="https://twitter.com/colettesnowpro">Twitter</a></li>
+                                <li><a href="https://facebook.com/colettesnowmedia">Facebook</a></li>
+                                <li><a href="https://www.pinterest.com.au/colettesnow/">Pinterest</a></li>
+                                <li><a href="https://github.com/colettesnowmedia">GitHub</a></li>
+                        </ul>
+        </div>
+</div>
