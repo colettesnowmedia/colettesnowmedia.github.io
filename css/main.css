@@ -536,5 +536,28 @@ article img {
 
 #breadcrumbs { width: 900px; margin: 0 auto; font-size: 10pt; }
 
+.main-area img { max-width: 620px; }
+
 .inner h1:first-child { margin-top: 5px; }
 
+.csm_membership_form p label:first-child { width: 30%; display: inline-block; vertical-align: top; }
+.csm_membership_form p input[type=text], 
+.csm_membership_form p input[type=tel], 
+.csm_membership_form p input[type=email],
+.csm_membership_form p input[type=url],
+.csm_membership_form p input[type=password], 
+.csm_membership_form select { width: 66%; vertical-align: middle; height: inherit !important; }
+.csm_membership_form p label:not(:first-child) { display: inline-block; width: inherit !important; padding-left: 30%; }
+.csm_membership_form p label:nth-child(2) { padding-left: 0; margin-left: -4px;  }
+.csm_membership_form p label { vertical-align: top;  }
+.csm_membership_form p.cb label { width: unset; }
+.csm_membership_form textarea { height: 300px; width: 66%; }
+
+.latest-posts article { display: table-cell; width: 33%; padding-right: 20px; }
+.latest-posts article:nth-child(3n) { padding-right: 0; }
+.latest-posts article p:first-child { margin-bottom: 0; }
+.latest-posts article h3 { margin-top: 0; }
+
+.latest-products .product { /* display: table-cell; */ width: 33%; padding-right: 20px; }
+.latest-products .product:nth-child(3n) { padding-right: 0; }
+.latest-products .product h3 { margin-top: 0; }
