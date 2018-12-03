@@ -7,9 +7,18 @@
 
     {% include header.html %}
     <div class="inner">
+        {% unless page.is_home == true %}
+        <div class="posts main-area">
+        {% endunless %}
+      {% include breadcrumbs.html %}
       <article class="page page-{{ page.name | remove: ".md" | remove: ".html" }} type-page hentry">
         {{ content }}
       </article>
+      {% unless page.is_home == true %}
+    </div>
+
+    {% include sidebar.html %}
+    {% endunless %}
     </div>
 
     {% include footer.html %}
