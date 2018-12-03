@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    <div class="inner">
+        <div class="posts main-area">
+            <h1>Author: {{ page.title }}</h1>
+
+            {% unless page.gravatar == "" %}
+                <img src="https://www.gravatar.com/avatar/{{ page.gravatar | remove: ' ' | strip_newlines | downcase | md5 }}" class="alignleft" />
+            {% endunless %}
+
+            <dl>
+                {% unless page.twitter == "" %}
+                <dt>Twitter:</dt>
+                <dd><a href="https://twitter.com/{{ page.twitter }}" rel="me">{{ page.twitter }}</a></dd>
+                {% endunless %}
+                {% unless page.facebook == "" %}
+                <dt>Facebook:</dt>
+                <dd><a href="https://facebook.com/{{ page.facebook }}" rel="me">{{ page.facebook }}</a></dd>
+                {% endunless %}
+            </dl>
+                
+            {{ content }}
+
+            <h2>Posts</h2>
+
+            <ul>
+                {% assign author_posts = site.posts | where:"author",page.name %}
+                {% for post in author_posts %}
+                <li>{{ post.date | date: "%d/%m" }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% include sidebar.html %}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>

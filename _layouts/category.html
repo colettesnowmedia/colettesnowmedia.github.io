@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">  
+    
+{% include head.html %}
+
+<body>
+      
+{% include header.html %}
+
+<div class="inner">
+        <div class="posts main-area">
+      
+        {% include breadcrumbs.html %}
+
+        <h1 class="page-heading">Category: {{ page.title }}</h1>
+
+        {% unless page.content == '' %}
+            <p>{{ page.content }}</p>
+        {% endunless %}
+      
+        {% for post in site.categories[page.term] %}
+          {% assign authors = site.authors | where:'slug',post.author | first %}
+
+        <article class="post">
+              <div class="thumbnail">
+                <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"><img width="150" height="150" src="/images/thumbnails/{{ post.slug }}.jpg" class="attachment-thumbnail size-thumbnail wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt=""></a>
+              </div>
+              <div class="post_details">
+                  <h2 class="entry-title">
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </h2>
+                  {{ post.excerpt }}
+                  <div class="post_meta">By <a href="{{ authors.url }}">{{ authors.title  }}</a> - {{ post.date | date: "%b %-d, %Y" }} - <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Comments</a></div>
+              </div>
+      
+            </article>
+          {% endfor %}
+        </div>
+      
+        {% include sidebar.html %}
+
+      </div>
+
+      {% include footer.html %}
+
+    </body>
+  
+  </html>
