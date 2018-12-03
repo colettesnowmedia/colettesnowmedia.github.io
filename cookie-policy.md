@@ -18,7 +18,8 @@ We use cookies for the following purposes: to enable certain functions of the Se
 
 We use both session and persistent cookies on the Service and we use different types of cookies to run the Service:
 
-– Essential cookies. We may use essential cookies to authenticate users and prevent fraudulent use of user accounts.
+### Essential cookies
+We may use essential cookies to authenticate users and prevent fraudulent use of user accounts.
 
 ### Third-party cookies
 In addition to our own cookies, we may also use various third-parties cookies to report usage statistics of the Service, deliver advertisements on and through the Service, and so on.
