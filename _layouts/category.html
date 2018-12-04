@@ -26,7 +26,7 @@
                   <h2 class="entry-title">
                       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                   </h2>
-                  {{ post.excerpt }}
+                  {{ post.excerpt | markdownify }}
                   <div class="post_meta">By <a href="{{ authors.url }}">{{ authors.title  }}</a> - {{ post.date | date: "%b %-d, %Y" }} - <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Comments</a></div>
               </div>
       
