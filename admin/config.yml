@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: colettesnowmedia/colettesnowmedia.github.io
+  branch: master
+
+media_folder: "assets/images"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: b76b758fbbcd64ee79b2
+
+display_url: https://colettesnow.com
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    description: "Blog posts"
+    folder: "_posts"
+    delete: true
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+    - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Publication Date", name: "date", widget: "datetime"}
+    - {label: "Author", name: "author", widget: "string", default: "colettesnow"}
+    - {label: "Categories", name: "categories", widget: "string", default: "anime"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - {label: "Excerpt", name: "text", widget: "string", required: false}
