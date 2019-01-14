@@ -33,3 +33,66 @@ collections:
     - {label: "Categories", name: "categories", widget: "string", default: "anime"}
     - {label: "Body", name: "body", widget: "markdown"}
     - {label: "Excerpt", name: "text", widget: "string", required: false}
+  - name: "products"
+    label: "Products"
+    label_singular: "Product"
+    description: "Colette Snow Media products"
+    folder: "products"
+    delete: true
+    create: true
+    fields:
+    - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Homepage"
+        name: "home"
+        file: "index.md"
+        fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "text"}
+      - label: "About Colette Snow"
+        name: "about"
+        file: "about-colette-snow-media.md"
+        fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Services"
+        name: "services"
+        file: "services.md"
+        fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Cookie Policy"
+        name: "cookie-policy"
+        file: "cookie-policy.md"
+        fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Contact Form"
+        name: "contact"
+        file: "contact.html"
+        fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "text"}
+      - label: "Contact Form Thank You"
+        name: "contact"
+        file: "contact-thankyou.md"
+        fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "text"}
+      - label: "Error 404 Page"
+        name: "error"
+        file: "404.html"
+        fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "text"}
