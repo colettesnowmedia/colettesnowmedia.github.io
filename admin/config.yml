@@ -11,6 +11,7 @@ media_library:
     publicKey: b76b758fbbcd64ee79b2
 
 display_url: https://colettesnow.com
+logo_url: https://colettesnow.com/assets/images/logo.png
 slug:
   encoding: "ascii"
   clean_accents: true
