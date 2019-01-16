@@ -53,7 +53,7 @@ collections:
       fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
     - label: "About Colette Snow"
       name: "about"
       file: "about-colette-snow-media.md"
@@ -81,18 +81,18 @@ collections:
       fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
     - label: "Contact Form Thank You"
-      name: "contact"
+      name: "contact-thankyou"
       file: "contact-thankyou.md"
       fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
     - label: "Error 404 Page"
       name: "error"
       file: "404.html"
       fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
