@@ -79,9 +79,9 @@ h5, h6, .wp-block-subhead, input[type=submit], input[type=button], input[type=re
 }
 
 .plugin-intro {
-    font-size: 18pt;
-    line-height: 30pt !important;
-    color: #420b2a;
+	font-size: 18pt;
+	line-height: 30pt !important;
+	color: #420b2a;
 }
 
 /* Font Styles */
@@ -112,8 +112,8 @@ header .inner {
 
 .site-heading a {
 	height: 60px;
-    width: 520px;
-    display: inline-block;
+	width: 520px;
+	display: inline-block;
 }
 
 .site-heading a span {
@@ -519,45 +519,172 @@ article img {
 	min-width: unset;
 }
 
-.copyright { float: left; }
+.copyright {
+	float: left;
+}
 
-.foot_links { 
+.foot_links {
 	list-style: none;
 }
 
-.foot_links ul { 
+.foot_links ul {
 	padding: 0;
 }
 
-.foot_links li { 
+.foot_links li {
 	display: inline-block;
 	padding-right: 15px;
 }
 
-#breadcrumbs { width: 900px; margin: 0 auto; font-size: 10pt; }
+#breadcrumbs {
+	width: 900px;
+	margin: 0 auto;
+	font-size: 10pt;
+}
 
-.main-area img { max-width: 620px; }
+.main-area img {
+	max-width: 620px;
+}
 
-.inner h1:first-child { margin-top: 5px; }
+.inner h1:first-child {
+	margin-top: 5px;
+}
 
-.csm_membership_form p label:first-child { width: 30%; display: inline-block; vertical-align: top; }
-.csm_membership_form p input[type=text], 
-.csm_membership_form p input[type=tel], 
-.csm_membership_form p input[type=email],
-.csm_membership_form p input[type=url],
-.csm_membership_form p input[type=password], 
-.csm_membership_form select { width: 66%; vertical-align: middle; height: inherit !important; }
-.csm_membership_form p label:not(:first-child) { display: inline-block; width: inherit !important; padding-left: 30%; }
-.csm_membership_form p label:nth-child(2) { padding-left: 0; margin-left: -4px;  }
-.csm_membership_form p label { vertical-align: top;  }
-.csm_membership_form p.cb label { width: unset; }
-.csm_membership_form textarea { height: 300px; width: 66%; }
+.csm_membership_form p label:first-child {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
 
-.latest-posts article { display: table-cell; width: 33%; padding-right: 20px; }
-.latest-posts article:nth-child(3n) { padding-right: 0; }
-.latest-posts article p:first-child { margin-bottom: 0; }
-.latest-posts article h3 { margin-top: 0; }
+.csm_membership_form p input[type=text], .csm_membership_form p input[type=tel], .csm_membership_form p input[type=email], .csm_membership_form p input[type=url], .csm_membership_form p input[type=password], .csm_membership_form select {
+	width: 66%;
+	vertical-align: middle;
+	height: inherit !important;
+}
 
-.latest-products .product { /* display: table-cell; */ width: 33%; padding-right: 20px; }
-.latest-products .product:nth-child(3n) { padding-right: 0; }
-.latest-products .product h3 { margin-top: 0; }
+.csm_membership_form p label:not(:first-child) {
+	display: inline-block;
+	width: inherit !important;
+	padding-left: 30%;
+}
+
+.csm_membership_form p label:nth-child(2) {
+	padding-left: 0;
+	margin-left: -4px;
+}
+
+.csm_membership_form p label {
+	vertical-align: top;
+}
+
+.csm_membership_form p.cb label {
+	width: unset;
+}
+
+.csm_membership_form textarea {
+	height: 300px;
+	width: 66%;
+}
+
+.latest-posts article {
+	display: table-cell;
+	width: 33%;
+	padding-right: 20px;
+}
+
+.latest-posts article:nth-child(3n) {
+	padding-right: 0;
+}
+
+.latest-posts article p:first-child {
+	margin-bottom: 0;
+}
+
+.latest-posts article h3 {
+	margin-top: 0;
+}
+
+.latest-products .product {
+	/* display: table-cell; */
+	width: 33%;
+	padding-right: 20px;
+}
+
+.latest-products .product:nth-child(3n) {
+	padding-right: 0;
+}
+
+.latest-products .product h3 {
+	margin-top: 0;
+}
+
+/* Portfolio */
+
+.portfolio-set {
+	margin: 12px -85px 0 -85px;
+}
+
+.website .client-title {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.website {
+	margin-right: 10px;
+	max-width: 260px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.website:last-child {
+	margin-right: 0;
+}
+
+.website img {
+	height: 178px;
+	width: 260px;
+	margin-bottom: 10px;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.s-lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+	/** Position and style */
+	position: fixed !important;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.s-lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.s-lightbox strong, .s-lightbox p, .s-lightbox small {
+	color: #ffffff;
+}
+
+.s-lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+	/** Unhide lightbox **/
+	display: block;
+}
+
+a.s-lightbox {
+	text-decoration: none !important;
+}
+
+.s-lightbox span {
+	display: block;
+	color: #FFFFFF !important;
+}
