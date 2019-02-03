@@ -27,11 +27,12 @@ title: Solutions for Online Publishing and Communities
 <p>Do you have an idea for a website that cannot be accomplished with an existing WordPress plugin? Colette Snow Media can take your idea and develop it as a WordPress plugin.</p>
 
 <p><a href="/services/#custom-wordpress-plugin-development">Learn more</a></p>
-</div>\
+</div>
 <div class="product">
 
 <p class="product-title"><strong>Design to WordPress Theme</strong></p>
-<p>Have you had a website design created by a graphics designer? Colette Snow Media can convert the design to a standards compliant and accessible WordPress theme.</p>\
+<p>Have you had a website design created by a graphics designer? Colette Snow Media can convert the design to a standards compliant and accessible WordPress theme.</p>
+
 <p><a href="/services/#design-to-wordpress-theme-conversion">Learn more</a></p>
 </div>
 </div>
