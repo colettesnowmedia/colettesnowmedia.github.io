@@ -1,10 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 title: Solutions for Online Publishing and Communities
-is_home: true
 ---
 # Colette Snow Media creates solutions for online publishing and communities. Our focus is on building usable and accessible solutions to help you succeed
 
@@ -18,6 +14,25 @@ is_home: true
 <p class="csm_price">WordPress Plugin | Free</p>
 
 <p>WordPress plugin to allow bulk importing, editing, and deletion of users via the use of <abbr title="Comma Separated Value">CSV</abbr> files.</p>
+</div>
+</div>
+
+## Services
+
+<div class="latest-products">
+
+<div class="product">
+
+<p class="product-title"><strong>WordPress Development</strong></p>
+<p>Do you have an idea for a website that cannot be accomplished with an existing WordPress plugin? Colette Snow Media can take your idea and develop it as a WordPress plugin.</p>
+
+<p><a href="/services/#custom-wordpress-plugin-development">Learn more</a></p>
+</div>\
+<div class="product">
+
+<p class="product-title"><strong>Design to WordPress Theme</strong></p>
+<p>Have you had a website design created by a graphics designer? Colette Snow Media can convert the design to a standards compliant and accessible WordPress theme.</p>\
+<p><a href="/services/#design-to-wordpress-theme-conversion">Learn more</a></p>
 </div>
 </div>
 
