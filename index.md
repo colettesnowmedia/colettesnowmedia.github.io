@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Solutions for Online Publishing and Communities
+is_home: true
 ---
 # Colette Snow Media creates solutions for online publishing and communities. Our focus is on building usable and accessible solutions to help you succeed
 
