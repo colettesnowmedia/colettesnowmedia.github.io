@@ -15,9 +15,12 @@
             <h1>{{ page.title }}</h1>
 
             {{ content }}
+
+            <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
         </article>
 
         <footer>
+
           <p>This entry was posted by {{ page.author }}
             on <time datetime="{{ page.date | date: "%Y-%d-%m" }}">{{ page.date | date: "%A, %-d %B %Y" }}</time>
             at <time datetime="{{ page.date | date: "%I:%M" }}">{{ page.date | date: "%I:%M%p" }}</time>
