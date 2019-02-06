@@ -30,8 +30,8 @@ collections:
     - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publication Date", name: "date", widget: "datetime"}
-    - {label: "Author", name: "author", widget: "string", default: "colettesnow"}
-    - {label: "Categories", name: "categories", widget: "string", default: "anime"}
+    - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["title", "twitter", "username"], valueField: "twitter", displayFields: ["title", "username"]}
+    - {label: "Categories", name: "categories", widget: "list", field: { label: "Category", widget: "relation", searchFields: ["title", "term"], valueField: "term", displayFields: ["title"], collection: "categories" }}
     - {label: "Body", name: "body", widget: "markdown"}
     - {label: "Excerpt", name: "text", widget: "string", required: false}
   - name: "products"

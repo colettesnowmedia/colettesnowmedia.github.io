@@ -1,8 +1,9 @@
 ---
 title:  Gutenberg, What Is It and What Now?
-categories: wordpress
+categories: 
+  - wordpress
 layout: post
-author: colettesnow
+author: colette_snow
 excerpt: Gutenberg is just around the corner and will make its debut in the upcoming WordPress v5.0. This post discusses the basics of what Gutenberg is and your options if your not ready to make the switch.
 ---
 
