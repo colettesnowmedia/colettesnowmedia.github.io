@@ -21,7 +21,6 @@ collections:
   - name: "posts"
     label: "Posts"
     label_singular: "Post"
-    description: "Blog posts"
     folder: "_posts"
     delete: true
     create: true
@@ -34,10 +33,24 @@ collections:
     - {label: "Categories", name: "categories", widget: "list", field: { label: "Category", widget: "relation", searchFields: ["title", "term"], valueField: "term", displayFields: ["title"], collection: "categories" }}
     - {label: "Body", name: "body", widget: "markdown"}
     - {label: "Excerpt", name: "text", widget: "string", required: false}
+  - name: "categories"
+    label: "Categories"
+    label_singular: "Category"
+    folder: "_cats"
+    delete: true
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - {label: "Layout", name: "layout", widget: "hidden", default: "category"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Term", name: "term", widget: "string"}
+    - {label: "In Navigation?", name: "in_main_nav", widget: "boolean"}
+    - {label: "Permalink", name: "permalink", widget: "string", required: false}
+    editor:
+      preview: false
   - name: "products"
     label: "Products"
     label_singular: "Product"
-    description: "Colette Snow Media products"
     folder: "products"
     delete: true
     create: true
@@ -48,7 +61,6 @@ collections:
   - name: "portfolio"
     label: "Portfolio Items"
     label_singular: "Portfolio Item"
-    description: "Portfolio"
     folder: "_portfolio"
     delete: true
     create: true
@@ -74,6 +86,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-    - {label: "Layout", name: "layout", widget: "select",options: [{ label: "Chicago", value: "ORD" },{ label: "Page", value: "page" },{ label: "Default (Homepage)", value: "default" }], default: "page"}
+    - {label: "Layout", name: "layout", widget: "select",options: [{ label: "Default (Homepage)", value: "default" },{ label: "Page", value: "page" },{ label: "Page without Sidebar", value: "no-sidebar-page" }], default: "page"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Body", name: "body", widget: "markdown"}
+    - {label: "Permalink", name: "permalink", widget: "string", required: false}
