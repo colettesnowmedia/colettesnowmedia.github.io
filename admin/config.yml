@@ -74,6 +74,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-    - {label: "Layout", name: "layout", widget: "hidden", widget: "select",options: [{ label: "Chicago", value: "ORD" },{ label: "Page", value: "page" },{ label: "Default (Homepage)", value: "default" }], default: "page"}
+    - {label: "Layout", name: "layout", widget: "select",options: [{ label: "Chicago", value: "ORD" },{ label: "Page", value: "page" },{ label: "Default (Homepage)", value: "default" }], default: "page"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Body", name: "body", widget: "markdown"}
