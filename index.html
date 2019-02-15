@@ -1,0 +1,59 @@
+---
+layout: default
+title: Solutions for Online Publishing and Communities
+is_home: true
+---
+<div class="heading">
+  <h1>Colette Snow Media creates solutions for online publishing and communities. Our focus is on building usable and accessible solutions to help you succeed</h1>
+</div>
+
+<h2>Products</h2>
+
+<div class="latest-products">
+
+<div class="product">
+
+<p class="product-title"><a href="/products/bulk-user-management"><strong>Bulk User Management</strong></a></p>
+<p class="csm_price">WordPress Plugin | Free</p>
+
+<p>WordPress plugin to allow bulk importing, editing, and deletion of users via the use of <abbr title="Comma Separated Value">CSV</abbr> files.</p>
+</div>
+</div>
+
+<h2>Services</h2>
+
+<div class="latest-products">
+
+<div class="product">
+
+<p class="product-title"><strong>WordPress Development</strong></p>
+<p>Do you have an idea for a website that cannot be accomplished with an existing WordPress plugin? Colette Snow Media can take your idea and develop it as a WordPress plugin.</p>
+
+<p><a href="/services/#custom-wordpress-plugin-development">Learn more</a></p>
+</div>
+<div class="product">
+
+<p class="product-title"><strong>Design to WordPress Theme</strong></p>
+<p>Have you had a website design created by a graphics designer? Colette Snow Media can convert the design to a standards compliant and accessible WordPress theme.</p>
+
+<p><a href="/services/#design-to-wordpress-theme-conversion">Learn more</a></p>
+</div>
+</div>
+
+<h2>Latest Blog Posts</h2>
+
+<div class="latest-posts">
+{% for post in site.posts limit: 3 %}
+  <article class="post">
+    <div class="post_details">
+        <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+        <h3 class="entry-title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h3>
+        <p>{{- post.excerpt | strip_html }}  <small><a href="{{ post.url | prepend: site.baseurl }}">Read More&hellip;</a></small></p>
+        <div class="post_meta"><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Comments</a></div>
+    </div>
+
+  </article> 
+{% endfor %}
+</div>

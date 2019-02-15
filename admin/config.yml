@@ -68,53 +68,12 @@ collections:
         - { label: "Projects", value: "projects" }
   - name: "pages"
     label: "Pages"
-    files:
-    - label: "Homepage"
-      name: "home"
-      file: "index.md"
-      fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    - label: "About Colette Snow"
-      name: "about"
-      file: "about-colette-snow-media.md"
-      fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    - label: "Services"
-      name: "services"
-      file: "services.md"
-      fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    - label: "Cookie Policy"
-      name: "cookie-policy"
-      file: "cookie-policy.md"
-      fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    - label: "Contact Form"
-      name: "contact"
-      file: "contact.html"
-      fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    - label: "Contact Form Thank You"
-      name: "contact-thankyou"
-      file: "contact-thankyou.md"
-      fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    - label: "Error 404 Page"
-      name: "error"
-      file: "404.html"
-      fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+    label_singular: "Page"
+    folder: "_pages"
+    delete: true
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - {label: "Layout", name: "layout", widget: "hidden", widget: "select",options: [{ label: "Chicago", value: "ORD" },{ label: "Page", value: "page" },{ label: "Default (Homepage)", value: "default" }], default: "page"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
