@@ -30,7 +30,7 @@
           {% assign count = count | plus: 1 %}
           {% if cat %}
           {% assign category = site.cats | where:'term',cat | first %}
-          {% if ad_cat_count == count and count != 1 %}{% assign and_out = 1 %} and {% endif %}{% if category.term.size > 1 %}<a href="/category/{{ category.term }}/" class="post-category">{{ category.title }}</a>{% else %}{{ cat | capitalize }}{% endif %}{% if and_out == 0 and count != 1 %}, {% endif %}{% endif %}{% endfor %}.</p>
+          {% if ad_cat_count == count and count != 1 %}{% assign and_out = 1 %} and {% endif %}{% if category.term.size > 1 %}<a href="/blog/category/{{ category.term }}/" class="post-category">{{ category.title }}</a>{% else %}{{ cat | capitalize }}{% endif %}{% if and_out == 0 and count != 1 %}, {% endif %}{% endif %}{% endfor %}.</p>
       </footer>
         <div id="disqus_thread"></div>
 <script>
