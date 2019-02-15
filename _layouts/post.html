@@ -18,14 +18,20 @@
 
             <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
         </article>
-
-        <footer>
-
-          <p>This entry was posted by {{ page.author }}
-            on <time datetime="{{ page.date | date: "%Y-%d-%m" }}">{{ page.date | date: "%A, %-d %B %Y" }}</time>
-            at <time datetime="{{ page.date | date: "%I:%M" }}">{{ page.date | date: "%I:%M%p" }}</time>
-            and is filed under {{ page.categories | array_to_sentence_string }}.</p>
-        </footer>
+      {% assign count = 0 %}
+      {% assign cat_count = page.categories.size %}
+      {% assign ad_cat_count = cat_count %}
+      {% assign authors = site.authors | where:'slug',page.author | first %}
+      <footer>
+        <p>This entry was posted by <a href="{{ authors.url }}">{{ authors.title }}</a>
+          on <time datetime="{{ page.date | date: "%Y-%d-%m" }}">{{ page.date | date: "%A, %-d %B %Y" }}</time>
+          at <time datetime="{{ page.date | date: "%I:%M" }}">{{ page.date | date: "%I:%M%p" }}</time>{% assign and_out = 0 %}
+          and is filed under {% for cat in page.categories %}
+          {% assign count = count | plus: 1 %}
+          {% if cat %}
+          {% assign category = site.cats | where:'term',cat | first %}
+          {% if ad_cat_count == count and count != 1 %}{% assign and_out = 1 %} and {% endif %}{% if category.term.size > 1 %}<a href="/category/{{ category.term }}/" class="post-category">{{ category.title }}</a>{% else %}{{ cat | capitalize }}{% endif %}{% if and_out == 0 and count != 1 %}, {% endif %}{% endif %}{% endfor %}.</p>
+      </footer>
         <div id="disqus_thread"></div>
 <script>
 
