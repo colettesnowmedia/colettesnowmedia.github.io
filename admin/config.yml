@@ -33,6 +33,18 @@ collections:
     - {label: "Categories", name: "categories", widget: "list", field: { label: "Category", widget: "relation", searchFields: ["title", "term"], valueField: "term", displayFields: ["title"], collection: "categories" }}
     - {label: "Body", name: "body", widget: "markdown"}
     - {label: "Excerpt", name: "text", widget: "string", required: false}
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    folder: "_pages"
+    delete: true
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - {label: "Layout", name: "layout", widget: "select",options: [{ label: "Default (Homepage)", value: "default" },{ label: "Page", value: "page" },{ label: "Page without Sidebar", value: "no-sidebar-page" }], default: "page"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - {label: "Permalink", name: "permalink", widget: "string", required: false}
   - name: "categories"
     label: "Categories"
     label_singular: "Category"
@@ -78,15 +90,3 @@ collections:
         - { label: "WordPress", value: "wordpress" }
         - { label: "Website (non WordPress)", value: "websites" }
         - { label: "Projects", value: "projects" }
-  - name: "pages"
-    label: "Pages"
-    label_singular: "Page"
-    folder: "_pages"
-    delete: true
-    create: true
-    slug: "{{slug}}"
-    fields:
-    - {label: "Layout", name: "layout", widget: "select",options: [{ label: "Default (Homepage)", value: "default" },{ label: "Page", value: "page" },{ label: "Page without Sidebar", value: "no-sidebar-page" }], default: "page"}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Body", name: "body", widget: "markdown"}
-    - {label: "Permalink", name: "permalink", widget: "string", required: false}
