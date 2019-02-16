@@ -699,6 +699,7 @@ a.s-lightbox {
 	background-size: cover;
 	width: 100%;
 	min-height: 300px;
+	height: 300px;
 	margin-top: -10px;
 	vertical-align: bottom !important;
 	display: table;
