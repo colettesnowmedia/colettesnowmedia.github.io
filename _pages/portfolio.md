@@ -2,6 +2,7 @@
 layout: no-sidebar-page
 title: Portfolio
 ---
+# Portfolio
 
 ## Projects
 
