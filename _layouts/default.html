@@ -6,6 +6,15 @@
   <body>
 
     {% include header.html %}
+        {% unless page.is_home2 == nil %}
+        <div class="heading">
+          <div>
+            <h1 class="inner">
+              <span>Colette Snow Media creates solutions for online publishing and communities. Our focus is on building usable and accessible solutions to help you succeed</span>
+            </h1>
+          </div>
+        </div>
+        {% endunless %}
     <div class="inner">
         {% unless page.is_home == true %}
         <div class="posts main-area">
