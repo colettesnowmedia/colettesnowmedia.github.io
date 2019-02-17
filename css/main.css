@@ -692,8 +692,8 @@ a.s-lightbox {
 	color: #FFFFFF !important;
 }
 
-.heading { 
-	background-image: url(/assets/images/crop2.jpg);
+.heading {
+	background-image: url(/assets/images/crop-1080.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -703,6 +703,12 @@ a.s-lightbox {
 	margin-top: -10px;
 	vertical-align: bottom !important;
 	display: table;
+}
+
+@media (min-width: 2000px) { 
+  .heading {
+    background-image: url(/assets/images/crop2.jpg);
+  }
 }
 
 .heading div {
