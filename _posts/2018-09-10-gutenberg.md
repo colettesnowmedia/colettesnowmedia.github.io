@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Gutenberg, What Is It and What Now?'
-date: 2019-02-18T01:09:29.971Z
+date: 2018-09-10T02:09:29.971Z
 author: colette_snow
 categories:
   - wordpress
