@@ -57,7 +57,7 @@ is_home2: true
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h3>
         {% if post.thumbnail %}
-        <p><img height="200" width="270" src="{{ post.thumbnail }}" title="{{ post.title }}" alt="" /></p>
+        <p><a href="{{ post.url | prepend: site.baseurl }}"><img height="200" width="270" src="{{ post.thumbnail }}" title="{{ post.title }}" alt="" /></a></p>
         {% endif %}
         <p>{{- post.excerpt | strip_html }}  <small><a href="{{ post.url | prepend: site.baseurl }}">Read More&hellip;</a></small></p>
         <div class="post_meta"><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Comments</a></div>
