@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Plugin Release: Bulk User Management"
-date:   2018-06-18 9:51:07 +1100
-categories:
-  - wordpress-plugins 
-  - announcements
+title: 'Plugin Release: Bulk User Management'
+date: '2018-06-18 9:51:07 +1100'
 author: colette_snow
+categories:
+  - wordpress-plugins
+  - announcements
+thumbnail: 'https://ucarecdn.com/0833902d-48b4-41ef-a0cf-949ca9c345b7/'
 ---
 Today, I am excited to announce our first WordPress plugin release. This plugin is called Bulk User Management, and as the name suggests, it allows you to create, edit or delete many users at once. It can also export a copy of your users which you can use to edit and re-upload. or store as a backup.
 
