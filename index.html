@@ -28,14 +28,21 @@ is_home2: true
 <p class="product-title"><strong>WordPress Development</strong></p>
 <p>Do you have an idea for a website that cannot be accomplished with an existing WordPress plugin? Colette Snow Media can take your idea and develop it as a WordPress plugin.</p>
 
-<p><a href="/services/#custom-wordpress-plugin-development">Learn more</a></p>
+<p><a href="/services/#custom-wordpress-plugin-development" class="call-to-action">Learn more</a></p>
 </div>
 <div class="product">
 
 <p class="product-title"><strong>Design to WordPress Theme</strong></p>
 <p>Have you had a website design created by a graphics designer? Colette Snow Media can convert the design to a standards compliant and accessible WordPress theme.</p>
 
-<p><a href="/services/#design-to-wordpress-theme-conversion">Learn more</a></p>
+<p><a href="/services/#design-to-wordpress-theme-conversion" class="call-to-action">Learn more</a></p>
+</div>
+<div class="product">
+
+<p class="product-title"><strong>Your Very Own Developer</strong></p>
+<p>Are you a graphic or web designer looking to expand the scope of your services? Colette Snow Media can offer the services already mentioned and more, so that you can focus on the design and we can worry about the development.</p>
+
+<p><a href="/services/#design-to-wordpress-theme-conversion" class="call-to-action">Learn more</a></p>
 </div>
 </div>
 
@@ -49,6 +56,9 @@ is_home2: true
         <h3 class="entry-title">
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h3>
+        {% if post.thumbnail %}
+        <p><img height="200" width="270" src="{{ post.thumbnail }}" title="{{ post.title }}" alt="" /></p>
+        {% endif %}
         <p>{{- post.excerpt | strip_html }}  <small><a href="{{ post.url | prepend: site.baseurl }}">Read More&hellip;</a></small></p>
         <div class="post_meta"><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Comments</a></div>
     </div>
