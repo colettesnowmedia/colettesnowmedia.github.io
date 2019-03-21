@@ -358,6 +358,10 @@ input[type=submit], input[type=button], input[type=reset] {
 	text-align: right;
 }
 
+#hire-colette li:hover {
+	background: #CE2283;
+}
+
 .required { color: darkred; }
 
  #hire-colette li {
@@ -372,6 +376,10 @@ input[type=submit], input[type=button], input[type=reset] {
 	text-decoration: none;
 	border: 0;
 	color: #FFF;
+}
+
+#hire-colette li:hover a {
+	color: #FFFFFF;
 }
 
 #social {
