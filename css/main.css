@@ -10,7 +10,7 @@ body {
 	font-family: Ubuntu, 'Open Sans', sans-serif;
 }
 
-.menu-main-container, h1, h2, h3, h4, h5, h6, .wp-block-subhead, input[type=submit], input[type=button], input[type=reset], #hire-colette {
+.menu-main-container, h1, h2, h3, h4, h5, h6, .wp-block-subhead, input[type=submit], input[type=button], input[type=reset], #hire-colette, .lead, .endlead {
 	font-family: 'Zilla Slab', Georgia, serif;
 }
 
@@ -760,17 +760,57 @@ a.s-lightbox {
   }
 }
 
-.heading div {
+.heading div.inner-head {
 	display: table-cell;
 	min-height: 300px;
 	padding-bottom: 25px;
 	vertical-align: bottom !important;
 }
 
+.heading h1 { opacity: 0.9; }
+
 .heading h1 span { 
-	background: #f9f9f9;
-	background: #f9f9f9e8;
-	outline: solid 6px #f9f9f9;
-	outline: solid 6px #f9f9f9e8;
+	background: #17B2C1;
+	outline: solid 6px #17B2C1;
+	/* opacity: 0.95; */
+	font-weight: normal;
+	color: #FFF;
+ }
+
+ .heading h1 span:nth-child(2) {
+	 display: block;
+	 margin-top: -40px;
+ }
+
+.heading div .inner:first-child, .heading div .inner:nth-child(3) {
+	 width: 900px !important;
+	 max-width: 900px;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+.endlead {
+	margin-top: 20px;
+	font-size: 14pt;
+}
+
+.lead span {
+	font-size: 14pt;
+	font-weight: bold;
+	background: #17B2C1;
+	background: #17B2C1e8;
+	outline: solid 6px #17B2C1;
+	outline: solid 6px #17B2C1e8;
+	line-height: 16pt;
+	opacity: 90; 
+	line-height: 24pt;
+	color: #FFFFFF;
+}
+
+ .endlead span {
+	background: #CE2283;
+	background: #CE2283e8;
+	outline: 4px solid #CE2283e8;
 	opacity: 90;
+	line-height: 23pt;
+	color: #FFFFFF;
  }
