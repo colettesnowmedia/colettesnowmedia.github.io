@@ -272,11 +272,12 @@ input[type=submit], input[type=button], input[type=reset] {
 .call-to-action {
 	margin-top: 0;
 	background: #420b2a;
-    color: #fff;
-    padding: 10px 20px;
+        color: #fff;
+        padding: 10px 20px;
 	border-radius: 5px;
 	text-decoration: none;
 	box-shadow: 2px 2px #403e3e36;
+	letter-spacing: 1px;
 }
 
 .call-to-action:hover {
