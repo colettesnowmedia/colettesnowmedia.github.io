@@ -4,13 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Pages
+- type: jekyll-posts
+  label: Posts
   create: all
+  match: "**/*"
 - type: directory
   path: _portfolio
   label: Portfolio
-  create: all
+  create: documents
   match: "**/*"
 - type: directory
   path: _pages
@@ -19,16 +20,12 @@ sections:
   match: "**/*"
 - type: directory
   path: _cats
-  label: Cats
-  create: all
+  label: Categories
+  create: documents
   match: "**/*"
 - type: directory
   path: _authors
   label: Authors
-  create: all
-  match: "**/*"
-- type: jekyll-posts
-  label: Posts
   create: all
   match: "**/*"
 upload_dir: uploads
