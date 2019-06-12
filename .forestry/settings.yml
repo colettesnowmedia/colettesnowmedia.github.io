@@ -8,6 +8,8 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  templates:
+  - blog-post
 - type: directory
   path: _portfolio
   label: Portfolio
@@ -18,6 +20,8 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+  templates:
+  - page
 - type: directory
   path: _cats
   label: Categories
