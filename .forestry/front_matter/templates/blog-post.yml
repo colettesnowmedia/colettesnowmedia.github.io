@@ -5,18 +5,29 @@ fields:
 - type: text
   name: layout
   label: layout
+  config:
+    required: true
+  default: post
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Post Title
 - type: datetime
   name: date
-  label: date
+  label: Post Date
 - type: text
   name: author
-  label: author
+  label: Author
 - type: list
   name: categories
-  label: categories
-- type: text
-  name: thumbnail
-  label: thumbnail
+  label: Categories
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: cats
+- name: thumbnail
+  type: file
+  config:
+    maxSize: 250
+  label: Thumbnail
